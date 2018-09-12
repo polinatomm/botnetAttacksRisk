@@ -1,0 +1,45 @@
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\bin\Debug\Курсовая.exe.config
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\bin\Debug\Курсовая.exe
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\bin\Debug\Курсовая.pdb
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\MainWindow.g.cs
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\App.g.cs
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая_MarkupCompile.cache
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая_MarkupCompile.lref
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\MainWindow.baml
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая.g.resources
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая.Properties.Resources.resources
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая.csproj.GenerateResource.Cache
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая.exe
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\Курсовая\obj\Debug\Курсовая.pdb
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\bin\Debug\Курсовая.exe.config
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая.exe
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая.pdb
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\bin\Debug\Курсовая.exe
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\bin\Debug\Курсовая.pdb
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая.csprojResolveAssemblyReference.cache
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\MainWindow.g.cs
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\App.g.cs
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая_MarkupCompile.cache
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая_MarkupCompile.lref
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\MainWindow.baml
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая.g.resources
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая.Properties.Resources.resources
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\Курсовая.csproj.GenerateResource.Cache
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\GraphEditor.g.cs
+G:\Ученики\Полина ВШЭ\курсовая\Курсовая\obj\Debug\GraphEditor.baml
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\bin\Debug\Курсовая.exe.config
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая.exe
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая.pdb
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\bin\Debug\Курсовая.exe
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\bin\Debug\Курсовая.pdb
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая.csprojResolveAssemblyReference.cache
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\GraphEditor.g.cs
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\MainWindow.g.cs
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\App.g.cs
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая_MarkupCompile.cache
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая_MarkupCompile.lref
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\GraphEditor.baml
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\MainWindow.baml
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая.g.resources
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая.Properties.Resources.resources
+C:\Users\tommp\Desktop\курсовая2\курсовая\Курсовая\obj\Debug\Курсовая.csproj.GenerateResource.Cache

@@ -1,0 +1,5 @@
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+G:\Ученики\Полина ВШЭ\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

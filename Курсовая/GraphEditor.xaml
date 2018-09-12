@@ -1,0 +1,231 @@
+﻿<Window x:Class="Курсовая.GraphEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсовая"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        Title="GraphEditor"
+        Icon="robot1.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*" MaxHeight="150"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Список вершин"
+                  Grid.Column="0"
+                  Grid.RowSpan="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="tb_vertexID"
+                         Grid.Row ="0"
+                         Margin="5,5,5,5"/>
+                <Button Margin="5,5,5,5"
+                        Grid.Row="1"
+                        Content="Добавить вершину"
+                        Click="Button_Click_addvertex"/>
+                <ListBox x:Name="lb_vertex"
+                         Margin="5,5,5,5"
+                         Grid.Row="2" 
+                         SelectionChanged="lb_vertex_SelectionChanged"/>
+                <Button Margin="5,5,5,5"
+                        Grid.Row="3"
+                        Content="Удалить вершину"
+                        Click="Button_Click_deletevertex"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Список соседей"
+                  Grid.Column="1"
+                  Grid.RowSpan="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="28.8"/>
+                </Grid.RowDefinitions>
+                <ComboBox x:Name="cb_neigbor"
+                         Grid.Row ="0"
+                         Margin="5,5,5,5"/>
+                <Button Margin="5,5,5,5"
+                        Grid.Row="1"
+                        Content="Добавить соседа"
+                        Click="Button_Click_addneighbor"/>
+                <ListBox x:Name="lb_neigbor"
+                         Margin="5,5,5,5"
+                         Grid.Row="2"/>
+                <Button Margin="5,5,5,5"
+                        Grid.Row="3"
+                        Content="Удалить соседа"
+                        Click="Button_Click_deleteneighbor"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Значение firewall"
+                  Grid.Column="2"
+                  Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="tb_firewall"
+                         Text="90" 
+                         Width="50"
+                         Margin="5,5,5,5"/>
+                <Button Content="Задать firewall"
+                        Margin="5,5,5,5"
+                        Width="100" Click="Button_Click_firewall"/>
+
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Column="2"
+                  Header="Добавить компоненту связности"
+                  Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="ОТ:" 
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_start"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Margin="5,5,5,5"/>
+                <TextBlock Text="ДО:" 
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_end"
+                           Grid.Row="0"
+                           Grid.Column="3"
+                           Margin="5,5,5,5"/>
+                <TextBlock Text="Количество ребер:"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"
+                           Grid.Column="0"                           
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_edges"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                           Margin="5,5,5,5"/>
+                <TextBlock Text="Значение firewall:"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"
+                           Grid.Column="0"                           
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_generation_fw"
+                           Grid.Row="2"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                           Margin="5,5,5,5"/>
+                <Button Grid.Row="3"
+                        Grid.Column="0"
+                        Content="Сгенерировать и добавить в граф"
+                        Grid.ColumnSpan="4"
+                        Margin="5,5,5,5" Click="Button_Click_madeAndAdd"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Column="2"
+                  Grid.Row="2"
+                  Header="Проверить связность двух вершин">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="ID1:" 
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_id1"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Margin="5,5,5,5"/>
+                <TextBlock Text="ID2:" 
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_id2"
+                           Grid.Row="0"
+                           Grid.Column="3"
+                           Margin="5,5,5,5"/>
+                <Button Grid.Row="1"
+                        Grid.Column="0"
+                        Content="Проверить связность"
+                        Grid.ColumnSpan="4"
+                        Margin="5,5,5,5" Click="Button_Click_checkTwoID"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Column="2"
+                  Grid.Row="3"
+                  Header="Проверить компоненту связности">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="ID:" 
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Margin="5,5,5,5"/>
+                <TextBox x:Name="tb_find_id"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Margin="5,5,5,5"/>
+                <Button Grid.Row="1"
+                        Grid.Column="0"
+                        Content="Посчитать связность"
+                        Grid.ColumnSpan="4"
+                        Margin="5,5,5,5" Click="Button_Click_countComp"/>
+                <TextBlock Text="Количество вершин:" 
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           Margin="5,5,5,5"/>
+                <TextBlock x:Name="tb_count_comp"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           Margin="5,5,5,5"/>
+                <Button Grid.Row="3"
+                        Grid.Column="0"
+                        Content="Удалить все несвязные вершины"
+                        Grid.ColumnSpan="4"
+                        Margin="5,5,5,5" 
+                        Click="Button_Click_deleteOtherComp"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
